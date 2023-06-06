@@ -21,7 +21,7 @@
 \newcommand{\sectiontitleII}{Variables and Type}
 \newcommand{\sectiontitleIII}{Assignment and Memory}
 \newcommand{\sectiontitleIV}{A {\it Riddle} }
-\newcommand{\sectiontitleV}{A C++ Example }
+\newcommand{\sectiontitleV}{A Python Example }
 
 \newcommand{\btVFill}{\vskip0pt plus 1filll}
 
@@ -33,7 +33,7 @@
 
 \begin{document}
 
-\lstset{language=MATLAB,basicstyle=\ttfamily\small,showstringspaces=false}
+\lstset{language=Python,basicstyle=\ttfamily\small,showstringspaces=false}
 
 \frame{\titlepage \center\begin{framed}\Large \textbf{Module \MNUM - \moduletitle}\end{framed} \vspace{5mm}}
 
@@ -187,7 +187,6 @@
 	\begin{frame}[label=sectionII,containsverbatim] \small
 		\frametitle{\sectiontitleII}
 
-	
 			\begin{lstlisting}
 			
 	value_A = 100; 
@@ -290,20 +289,44 @@
 
 	\begin{lstlisting}
 	
-		val_A =  53214;
+		val_A =  53214
 	
-		val_B = 0;
+		val_B = 0
 	
 	\end{lstlisting}
 	
 	\begin{itemize}
 		\item In Python and many other programming languages, variables are assigned a value using the equals sign. This is called {\BL assignment}.
 		\item Typically the value in the variable can be changed, or re-assigned. 
+		\item The expression on the right hand side may contain literal values or variables, operators, and functions. 
+		
 		
 	\end{itemize}
 	
 	
 	\end{frame}
+
+		% Section III - Frame III
+	\begin{frame}[containsverbatim] \small
+	\frametitle{\sectiontitleIII}
+
+	\textbf{Arithmetic Operators in Python} \vspace{5mm} \\
+
+	\renewcommand*{\arraystretch}{1.5}
+	\begin{tabular}{|c|c|c|} \hline
+		\textbf{Operator}& \textbf{Name}& \textbf{Example} \\ \hline
+		+ & Addition& x+y \\ \hline
+        - & Subtraction& x-y \\ \hline
+        * & Multiplication& x*y \\ \hline
+        / & Division& x/y \\ \hline
+        \% & Modulus & x\%y \\ \hline
+        ** & exponetiation & x**y \\ \hline
+        // & floor division& x//y \\ \hline 
+	\end{tabular}
+	
+	
+	\end{frame}
+	
 
 
 % Section IV

@@ -29,18 +29,20 @@
 \headcommand {\beamer@framepages {10}{10}}
 \headcommand {\slideentry {3}{0}{3}{11/11}{}{0}}
 \headcommand {\beamer@framepages {11}{11}}
-\headcommand {\beamer@sectionpages {9}{11}}
-\headcommand {\beamer@subsectionpages {9}{11}}
-\headcommand {\sectionentry {4}{A {\it Riddle} }{12}{A {\it Riddle} }{0}}
-\headcommand {\slideentry {4}{0}{1}{12/12}{}{0}}
+\headcommand {\slideentry {3}{0}{4}{12/12}{}{0}}
 \headcommand {\beamer@framepages {12}{12}}
-\headcommand {\beamer@sectionpages {12}{12}}
-\headcommand {\beamer@subsectionpages {12}{12}}
-\headcommand {\sectionentry {5}{A C++ Example }{13}{A C++ Example }{0}}
-\headcommand {\slideentry {5}{0}{1}{13/13}{}{0}}
+\headcommand {\beamer@sectionpages {9}{12}}
+\headcommand {\beamer@subsectionpages {9}{12}}
+\headcommand {\sectionentry {4}{A {\it Riddle} }{13}{A {\it Riddle} }{0}}
+\headcommand {\slideentry {4}{0}{1}{13/13}{}{0}}
 \headcommand {\beamer@framepages {13}{13}}
-\headcommand {\beamer@partpages {1}{13}}
-\headcommand {\beamer@subsectionpages {13}{13}}
 \headcommand {\beamer@sectionpages {13}{13}}
-\headcommand {\beamer@documentpages {13}}
-\headcommand {\gdef \inserttotalframenumber {13}}
+\headcommand {\beamer@subsectionpages {13}{13}}
+\headcommand {\sectionentry {5}{A Python Example }{14}{A Python Example }{0}}
+\headcommand {\slideentry {5}{0}{1}{14/14}{}{0}}
+\headcommand {\beamer@framepages {14}{14}}
+\headcommand {\beamer@partpages {1}{14}}
+\headcommand {\beamer@subsectionpages {14}{14}}
+\headcommand {\beamer@sectionpages {14}{14}}
+\headcommand {\beamer@documentpages {14}}
+\headcommand {\gdef \inserttotalframenumber {14}}
