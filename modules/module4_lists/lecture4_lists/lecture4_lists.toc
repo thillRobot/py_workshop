@@ -1,0 +1,4 @@
+\beamer@sectionintoc {1}{Data Stuctures and Programming}{3}{0}{1}
+\beamer@sectionintoc {2}{Using Lists in Python}{6}{0}{2}
+\beamer@sectionintoc {3}{Common Methods}{9}{0}{3}
+\beamer@sectionintoc {4}{Advanced Methods}{11}{0}{4}

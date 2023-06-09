@@ -1,0 +1,226 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+
+% Tennessee Technological University
+% ENGR1120-021 - GSET - Summer 2023
+% Tristan Hill - June 08, 2023
+% Module 4 - Lists
+% Lecture 4
+
+
+\documentclass[fleqn]{beamer} % for presentation (has nav buttons at bottom)
+
+%\usepackage{/home/thill/Documents/lectures/cpp_workshop/modules/cpp_lectures}
+\usepackage{/mnt/c/Users/thill/Documents/courses/py_workshop/modules/py_lectures}
+
+
+\newcommand{\MNUM}{3\hspace{2mm}} % Module number
+\newcommand{\TNUM}{---\hspace{2mm}} % Topic number - single topic for now
+\newcommand{\moduletitle}{Lists} % Titles and Stuff
+%\newcommand{\topictitle}{---} 
+
+\newcommand{\sectiontitleI}{Data Stuctures and Programming} % More Titles and Stuff
+\newcommand{\sectiontitleII}{Using Lists in Python}
+\newcommand{\sectiontitleIII}{Common Methods}
+\newcommand{\sectiontitleIV}{Advanced Methods}
+%\newcommand{\sectiontitleV}{Advanced Methods}
+
+\newcommand{\btVFill}{\vskip0pt plus 1filll}
+
+\setbeamercolor{title in head/foot}{fg=TTUgold} % this needs work...
+
+\title{GSET - Intro to Programming with Python}
+\author{Tristan Hill\vspc \hspc Tennessee Technological University \hspc}
+\date{Summer 2023}
+
+\begin{document}
+
+\lstset{language=MATLAB,basicstyle=\ttfamily\small,showstringspaces=false}
+
+\frame{\titlepage \center\begin{framed}\Large \textbf{Module \MNUM - \moduletitle}\end{framed} \vspace{5mm}}
+
+% Section 0 - Outline
+\begin{frame}
+	
+	\large \textbf{Module \MNUM - \moduletitle} \vspace{3mm}\\
+	
+	\begin{itemize}
+	
+		\item \hyperlink{sectionI}{\sectiontitleI} \vspc % Section I
+		\item \hyperlink{sectionII}{\sectiontitleII} \vspc % Section II
+		\item \hyperlink{sectionIII}{\sectiontitleIII} \vspc %Section III
+		\item \hyperlink{sectionIV}{\sectiontitleIV} \vspc %Section IV	
+	%	\item \hyperlink{sectionV}{\sectiontitleV} \vspc %Section V
+	
+	\end{itemize}
+
+\end{frame}
+
+% Section I
+\section{\sectiontitleI}
+
+	% Section I - Frame I
+	\begin{frame}[label=sectionI] \small
+		\frametitle{\sectiontitleI}
+
+		There are many ways to store data in the computer. \vspace{5mm}\\
+
+		Q: We have practiced using single values, but how do we store multiple values? \vspace{5mm}\\
+
+		A: 
+
+		\btVFill
+		\tiny{reference: \href{https://docs.python.org/3/tutorial/datastructures.html\#}{docs.python.org} } 	
+			
+	\end{frame}
+
+	% Section I - Frame II
+	\begin{frame} \small
+		\frametitle{\sectiontitleI}
+
+		Common Data Stuctures 
+		\renewcommand{\arraystretch}{1.5}
+		\begin{tabular}{|c|c|} \hline
+			Name& Description \hspace{50mm} \\ \hline
+			Array&  \\ \hline
+			*List&  \\ \hline
+			Stack&  \\ \hline
+			Queue&  \\ \hline
+			*Tuple and Sequence&  \\ \hline
+			*Set&  \\ \hline
+			*Dictionary&  \\ \hline
+		\end{tabular}
+
+		* Python Data Structures
+	\end{frame}
+		
+
+	% Section I - Frame III
+	\begin{frame} \small
+		\frametitle{\sectiontitleI}
+
+		Python Data Structures
+
+		\begin{itemize}
+			\item List
+			\item Tuple
+			\item Set
+			\item Dictionary
+		\end{itemize}
+
+		Note: C++ and MATLAB use arrays, but Python does not.
+
+
+
+		\btVFill
+		\tiny{reference: \href{https://docs.python.org/3/tutorial/datastructures.html\#}{docs.python.org} } 
+	\end{frame}
+
+
+% Section II
+\section{\sectiontitleII}
+
+	% Section II - Frame I
+	\begin{frame}[label=sectionII, containsverbatim] \small
+		\frametitle{\sectiontitleII}
+			
+		Initializing a List
+
+		\begin{lstlisting}
+
+buildings = ['Brown', 'Clement', 'Prescott', 'Bruner']
+
+		\end{lstlisting}
+
+	
+	\end{frame}
+
+	% Section II - Frame II
+	\begin{frame}[containsverbatim] \small
+		\frametitle{\sectiontitleII}
+		
+		Accessing Items in a List	
+
+		\begin{lstlisting}
+
+buildings = ['Brown', 'Clement', 'Prescott', 'Bruner']
+
+print('The north building is', buildings[3])
+
+print('The south building is', buildings[0])
+
+print('The east building is', buildings[1])
+
+print('The west building is', buildings[2])
+		\end{lstlisting}
+
+		\btVFill
+		\tiny{ref: \href{some link}{some text}}
+	\end{frame}	
+
+		% Section II - Frame III
+	\begin{frame}[containsverbatim] \small
+		\frametitle{\sectiontitleII}
+		
+		Redefining Items in a List	
+
+		\begin{lstlisting}
+
+buildings[3] = ['New Bruner']
+
+print('The CSC department is in', buildings[3])
+
+		\end{lstlisting}
+
+
+		\vspace*{10mm}
+		Remember the data in the list is {\it mutable}, meaning it can be changed after it has been defined.
+	
+
+		\btVFill
+		\tiny{ref: \href{some link}{some text}}
+	\end{frame}	
+
+
+% Section III
+\section{\sectiontitleIII}
+
+	% Section III - Frame I
+	\begin{frame}[label=sectionIII] \small
+		\frametitle{\sectiontitleIII}
+		
+
+		\btVFill
+		\tiny{reference: some ref }
+
+	\end{frame}
+
+	% Section III - Frame II
+	\begin{frame} \small
+		\frametitle{\sectiontitleIII}
+		
+		
+		
+	\end{frame}
+
+
+% Section IV
+\section{\sectiontitleIV}	
+	% Section IV - Frame I
+	\begin{frame}[label=sectionIV] \small
+		 
+
+		\btVFill
+		\tiny{reference: more info } 
+	\end{frame}
+
+% Section V
+%\section{\sectiontitleV}	
+%	% Section V - Frame I%
+%	\begin{frame}[label=sectionV,containsverbatim] \small
+%	\frametitle{\sectiontitleV}    
+%	\end{frame}
+
+
+\end{document}
+
