@@ -132,6 +132,9 @@ buildings = ['Brown', 'Clement', 'Prescott', 'Bruner']
 
 		\end{lstlisting}
 
+		The position of an items in list is the index. Duplicate items are allowed at different indicies. 
+
+		\tiny{reference: \href{https://docs.python.org/3/tutorial/introduction.html\#lists}{docs.python.org}}
 	
 	\end{frame}
 
@@ -148,11 +151,9 @@ buildings = ['Brown', 'Clement', 'Prescott', 'Bruner']
 print('The north building is', buildings[3])
 
 print('The south building is', buildings[0])
-
-print('The east building is', buildings[1])
-
-print('The west building is', buildings[2])
 		\end{lstlisting}
+\vspace*{5mm}
+The indicies of the list are used to access items.
 
 		\btVFill
 		\tiny{ref: \href{some link}{some text}}
@@ -166,7 +167,7 @@ print('The west building is', buildings[2])
 
 		\begin{lstlisting}
 
-buildings[3] = ['New Bruner']
+buildings[3] = 'New Bruner'
 
 print('The CSC department is in', buildings[3])
 
@@ -178,7 +179,7 @@ print('The CSC department is in', buildings[3])
 	
 
 		\btVFill
-		\tiny{ref: \href{some link}{some text}}
+		\tiny{ref: \href{https://docs.python.org/3/tutorial/datastructures.html#more-on-lists}{python.org}}
 	\end{frame}	
 
 
@@ -186,16 +187,34 @@ print('The CSC department is in', buildings[3])
 \section{\sectiontitleIII}
 
 	% Section III - Frame I
-	\begin{frame}[label=sectionIII] \small
+	\begin{frame}[label=sectionIII, containsverbatim] \small
 		\frametitle{\sectiontitleIII}
-		
 
+		Built-in Functions 
+		\begin{itemize}
+			\item Length - \lstinline{len(list)} - get the length of list
+			\item Delete - \lstinline{del(a)} - del the variable a
+		\end{itemize}	
+
+	    List Object Methods
+		\begin{itemize}
+
+		\item Append -  \lstinline{list.append( x )} - Add item x to end of list \\ 
+		\item Insert -   \lstinline{list.insert( x )} - Insert item x at position \\ 
+		\item Pop -  \lstinline{list.pop( i )} - Remove and item in list at position i and return it \\ 
+		\item Clear -  \lstinline{list.clear( )} - Remove all items from the list \\ 
+
+		\end{itemize}
+
+		\vspace*{10mm}
+		See the full list in the official python tutorial by clicking the link below. 
 		\btVFill
-		\tiny{reference: some ref }
+		\tiny{ref: \href{https://docs.python.org/3/tutorial/datastructures.html#more-on-lists}{python.org}}
 
 	\end{frame}
 
-	% Section III - Frame II
+
+	% Section III - Frame III
 	\begin{frame} \small
 		\frametitle{\sectiontitleIII}
 		
@@ -209,6 +228,20 @@ print('The CSC department is in', buildings[3])
 	% Section IV - Frame I
 	\begin{frame}[label=sectionIV] \small
 		 
+		\vspace*{3mm} 	
+
+		Advanced List Object Methods
+		\begin{itemize}
+
+		\item Sort -  \lstinline{list.append( x )} - Add item x to end of list \\ 
+		\item Reverse -   \lstinline{list.insert( x )} - Insert item x at position \\ 
+		\item Copy -  \lstinline{list.pop( i )} - Remove and item in list at position i and return it \\ 
+		
+		\end{itemize}
+
+		\vspace*{10mm}
+
+		\href{https://docs.python.org/3/tutorial/datastructures.html\#list-comprehensions}{\it List Comprehensions} are a very powerful way to iterate through the items in a list.
 
 		\btVFill
 		\tiny{reference: more info } 
