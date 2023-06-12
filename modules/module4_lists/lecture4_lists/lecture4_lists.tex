@@ -23,7 +23,7 @@
 \newcommand{\sectiontitleII}{Using Lists in Python}
 \newcommand{\sectiontitleIII}{Common Methods}
 \newcommand{\sectiontitleIV}{Advanced Methods}
-%\newcommand{\sectiontitleV}{Advanced Methods}
+\newcommand{\sectiontitleV}{Example Python Code}
 
 \newcommand{\btVFill}{\vskip0pt plus 1filll}
 
@@ -35,7 +35,7 @@
 
 \begin{document}
 
-\lstset{language=MATLAB,basicstyle=\ttfamily\small,showstringspaces=false}
+\lstset{language=Python,basicstyle=\ttfamily\small,showstringspaces=false}
 
 \frame{\titlepage \center\begin{framed}\Large \textbf{Module \MNUM - \moduletitle}\end{framed} \vspace{5mm}}
 
@@ -50,7 +50,7 @@
 		\item \hyperlink{sectionII}{\sectiontitleII} \vspc % Section II
 		\item \hyperlink{sectionIII}{\sectiontitleIII} \vspc %Section III
 		\item \hyperlink{sectionIV}{\sectiontitleIV} \vspc %Section IV	
-	%	\item \hyperlink{sectionV}{\sectiontitleV} \vspc %Section V
+	    \item \hyperlink{sectionV}{\sectiontitleV} \vspc %Section V
 	
 	\end{itemize}
 
@@ -193,17 +193,17 @@ print('The CSC department is in', buildings[3])
 
 		Built-in Functions 
 		\begin{itemize}
-			\item Length - \lstinline{len(list)} - get the length of list
-			\item Delete - \lstinline{del(a)} - del the variable a
+			\item \lstinline{len(list)} - get the length of list
+			\item \lstinline{del(a)} - del the variable a
 		\end{itemize}	
 
 	    List Object Methods
 		\begin{itemize}
 
-		\item Append -  \lstinline{list.append( x )} - Add item x to end of list \\ 
-		\item Insert -   \lstinline{list.insert( x )} - Insert item x at position \\ 
-		\item Pop -  \lstinline{list.pop( i )} - Remove and item in list at position i and return it \\ 
-		\item Clear -  \lstinline{list.clear( )} - Remove all items from the list \\ 
+		\item \lstinline{list.append( x )} - Add item x to end of list \\ 
+		\item \lstinline{list.insert( x )} - Insert item x at position \\ 
+		\item \lstinline{list.pop( i )} - Remove and item in list at position i and return it \\ 
+		\item \lstinline{list.clear( )} - Remove all items from the list \\ 
 
 		\end{itemize}
 
@@ -234,9 +234,9 @@ print('The CSC department is in', buildings[3])
 		Advanced List Object Methods
 		\begin{itemize}
 
-		\item Sort -  \lstinline{list.append( x )} - Add item x to end of list \\ 
-		\item Reverse -   \lstinline{list.insert( x )} - Insert item x at position \\ 
-		\item Copy -  \lstinline{list.pop( i )} - Remove and item in list at position i and return it \\ 
+		\item \lstinline{ list.sort(*, key=None, reverse=False)} - Sort the items of the list in place (the arguments can be used for sort customization, see sorted() for their explanation). \\ 
+		\item \lstinline{list.reverse()} - Reverse the elements of the list in place. \\ 
+		\item \lstinline{list.copy()} - Return a shallow copy of the list. Equivalent to \lstinline{a[:]}. \\ 
 		
 		\end{itemize}
 
@@ -249,11 +249,18 @@ print('The CSC department is in', buildings[3])
 	\end{frame}
 
 % Section V
-%\section{\sectiontitleV}	
-%	% Section V - Frame I%
-%	\begin{frame}[label=sectionV,containsverbatim] \small
-%	\frametitle{\sectiontitleV}    
-%	\end{frame}
+\section{\sectiontitleV}	
+ 	% Section V - Frame I
+ 	\begin{frame}[label=sectionV,containsverbatim] \small
+ 	 	\frametitle{\sectiontitleV}    
+ 	 	
+ 	 	\vspace*{15mm}
+		See {\bf lecture5\_lists.py} for example Python 3 code.	
+
+ 	 	\btVFill
+ 		\tiny{}
+ 	\end{frame}
+
 
 
 \end{document}

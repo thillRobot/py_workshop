@@ -20,10 +20,10 @@
 %\newcommand{\topictitle}{---} 
 
 \newcommand{\sectiontitleI}{A different type of data} % More Titles and Stuff
-\newcommand{\sectiontitleII}{A List of Characters }
-\newcommand{\sectiontitleIII}{Using Strings in Python}
-\newcommand{\sectiontitleIV}{Basic String Methods}
-\newcommand{\sectiontitleV}{Advanced Methods}
+\newcommand{\sectiontitleII}{Using Strings in Python }
+\newcommand{\sectiontitleIII}{Sequence Operations with Strings}
+\newcommand{\sectiontitleIV}{String Methods}
+\newcommand{\sectiontitleV}{Example Code}
 
 \newcommand{\btVFill}{\vskip0pt plus 1filll}
 
@@ -116,16 +116,13 @@
 		{\it Textual data in Python is handled with str objects, or strings. Strings are immutable sequences of Unicode code points. String literals are written in a variety of ways:} - docs.python.org
 
 		\begin{lstlisting}
-
 string1='Single quotes are nice!'
 
 string2="Double quotes allow 'embedded' single quotes" 
 
 string3='''Triple quote (single or double) allow for
 multiple line strings'''
-
 		\end{lstlisting}
-
 
 
 		\tiny{reference: \href{https://docs.python.org/3/library/stdtypes.html#textseq}{docs.python.org}}
@@ -135,7 +132,17 @@ multiple line strings'''
 	% Section II - Frame II
 	\begin{frame}[containsverbatim] \small
 		\frametitle{\sectiontitleII}
-		
+
+A string is typically made up of multiple letters, numbers, and/or symbols. \\ \vspace{2mm} 
+In Python, a string behaves like a \underline{\hspace{15mm}}. This means the items in a string can be accessed using the square brackets [ ] . \\ \vspace{2mm}   		
+
+		\begin{lstlisting}
+language='Python 3'
+
+print('The string is:', language) 
+print('The first item is:', language[0])
+print('The last item is:', language[len(langauge)-1])
+		\end{lstlisting}
 
 		\btVFill
 		\tiny{ref: \href{some link}{some text}}
@@ -147,6 +154,30 @@ multiple line strings'''
 		
 		Redefining Items in a List	
 
+		\begin{lstlisting}
+language='Python 3'
+
+language[7]='2'		
+		\end{lstlisting}
+
+	\end{frame}
+
+	% Section II - Frame IV
+	\begin{frame}[containsverbatim] \small
+		\frametitle{\sectiontitleII}
+
+		The previous line will not run. Read the error message carefully.
+
+		\begin{framed}
+			\begin{verbatim}
+				
+				Traceback (most recent call last):
+		  File "../lecture5_strings.py", line 23, in <module>
+		    language[7]='2'
+		TypeError: 'str' object does not support item assignment
+				
+			\end{verbatim}
+		\end{framed}
 
 		\btVFill
 		\tiny{ref: \href{}{python.org}}
@@ -160,40 +191,52 @@ multiple line strings'''
 	\begin{frame}[label=sectionIII, containsverbatim] \small
 		\frametitle{\sectiontitleIII}
 
+		Common Sequence Operations
+
+		\begin{itemize}
+		\item \lstinline{x in s} - True if an item of s is equal to x, else False 	
+		\item \lstinline{s + t} - the concatenation of s and t
+		\item \lstinline{len(s)} - length of s 
+		\end{itemize}
+		
+		See the full list in the link below
 
 		\btVFill
-		\tiny{ref: \href{}{python.org}}
-	\end{frame}
-
-	% Section III - Frame II
-	\begin{frame} \small
-		\frametitle{\sectiontitleIII}
-		
-		
-		\btVFill
-		\tiny{}	
+		\tiny{ref: \href{https://docs.python.org/3/library/stdtypes.html#common-sequence-operations}{docs.python.org - common sequence operations}}
 	\end{frame}
 
 % Section IV
 \section{\sectiontitleIV}	
 	% Section IV - Frame I
 	\begin{frame}[label=sectionIV] \small
-		\frametitle{\sectiontitleV}
+		\frametitle{\sectiontitleIV}
 
+		The string object has many useful methods. Here are just a few. \vspace{3mm}
+
+		\begin{itemize}
+			\item \lstinline{str.isascii()} - Return True if the string is empty or all characters in the string are ASCII, False otherwise.
+			\item \lstinline{str.isdecimal()} - Return True if all characters in the string are decimal characters and there is at least one character, False otherwise.
+			\item \lstinline{str.split(sep=None, maxsplit=- 1)} - Return a list of the words in the string, using sep as the delimiter string...
+		\end{itemize}
+		\vspace*{5mm}
+
+		See the full list by clicking the link below. 
 
 		\btVFill
-		\tiny{} 
+		\tiny{ref: \href{https://docs.python.org/3/library/stdtypes.html\#string-methods}{docs.python.org - string methods} } 
 	\end{frame}
 
 % Section V
 \section{\sectiontitleV}	
-	% Section V - Frame I
-	\begin{frame}[label=sectionV,containsverbatim] \small
-	 	\frametitle{\sectiontitleV}    
-	
+ 	% Section V - Frame I
+ 	\begin{frame}[label=sectionV,containsverbatim] \small
+ 	 	\frametitle{\sectiontitleV}    
+ 	 	
+ 	 	\vspace*{15mm}
+		See {\bf lecture5\_strings.py} for example Python 3 code.	
 
-	 	\btVFill
-		\tiny{}
-	\end{frame}
+ 	 	\btVFill
+ 		\tiny{}
+ 	\end{frame}
 
 \end{document}
