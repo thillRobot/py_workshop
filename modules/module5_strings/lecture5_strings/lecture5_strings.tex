@@ -1,0 +1,199 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+
+% Tennessee Technological University
+% ENGR1120-021 - GSET - Summer 2023
+% Tristan Hill - June 11, 2023
+% Module 5 - Strings
+% Lecture 5
+
+
+\documentclass[fleqn]{beamer} % for presentation (has nav buttons at bottom)
+
+%\usepackage{/home/thill/Documents/lectures/cpp_workshop/modules/cpp_lectures}
+\usepackage{/mnt/c/Users/thill/Documents/courses/py_workshop/modules/py_lectures}
+
+
+\newcommand{\MNUM}{5\hspace{2mm}} % Module number
+\newcommand{\TNUM}{---\hspace{2mm}} % Topic number - single topic for now
+\newcommand{\moduletitle}{Strings} % Titles and Stuff
+%\newcommand{\topictitle}{---} 
+
+\newcommand{\sectiontitleI}{A different type of data} % More Titles and Stuff
+\newcommand{\sectiontitleII}{A List of Characters }
+\newcommand{\sectiontitleIII}{Using Strings in Python}
+\newcommand{\sectiontitleIV}{Basic String Methods}
+\newcommand{\sectiontitleV}{Advanced Methods}
+
+\newcommand{\btVFill}{\vskip0pt plus 1filll}
+
+\setbeamercolor{title in head/foot}{fg=TTUgold} % this needs work...
+
+\title{GSET - Intro to Programming with Python}
+\author{Tristan Hill\vspc \hspc Tennessee Technological University \hspc}
+\date{Summer 2023}
+
+\begin{document}
+
+\lstset{language=Python,basicstyle=\ttfamily\small,showstringspaces=false}
+
+\frame{\titlepage \center\begin{framed}\Large \textbf{Module \MNUM - \moduletitle}\end{framed} \vspace{5mm}}
+
+% Section 0 - Outline
+\begin{frame}
+	
+	\large \textbf{Module \MNUM - \moduletitle} \vspace{3mm}\\
+	
+	\begin{itemize}
+	
+		\item \hyperlink{sectionI}{\sectiontitleI} \vspc % Section I
+		\item \hyperlink{sectionII}{\sectiontitleII} \vspc % Section II
+		\item \hyperlink{sectionIII}{\sectiontitleIII} \vspc %Section III
+		\item \hyperlink{sectionIV}{\sectiontitleIV} \vspc %Section IV	
+	 	\item \hyperlink{sectionV}{\sectiontitleV} \vspc %Section V
+	
+	\end{itemize}
+
+\end{frame}
+
+% Section I
+\section{\sectiontitleI}
+
+	% Section I - Frame I
+	\begin{frame}[label=sectionI] \small
+		\frametitle{\sectiontitleI}
+
+		We have leared to store and use numerical data in Python. This type of data is common to the scientist and engineer.
+
+		\begin{itemize}
+			\item Computations for Analysis
+			\item Data Collection and Storage
+			\item System Operation and Control
+		\end{itemize}
+
+		Computer systems require a different type of data which {\it may} be less familiar to the standard user. The \underline{\hspace{20mm}} and the \underline{\hspace{20mm}} data types have many uses in computer programming.
+
+		\begin{itemize}
+			\item
+			\item
+			\item
+		\end{itemize}
+		
+		\btVFill
+		\tiny{reference: \href{}{} } 	
+			
+	\end{frame}
+
+	% Section I - Frame II
+	\begin{frame} \small
+		\frametitle{\sectiontitleI}
+		
+		\href{https://www.asciitable.com/}{ASCII} - American Standard for Information Interchange - convention used for character encoding in most computer systems
+
+		\begin{itemize}
+			\item
+			\item
+		\end{itemize}
+
+		\href{https://home.unicode.org/}{Unicode} - {\it The Unicode Consortium is the standards body for the internationalization of the software and services}   
+
+		\begin{itemize}
+			\item
+			\item
+		\end{itemize}
+		
+	\end{frame}
+
+
+
+% Section II
+\section{\sectiontitleII}
+
+	% Section II - Frame I
+	\begin{frame}[label=sectionII, containsverbatim] \small
+		\frametitle{\sectiontitleII}
+		
+		{\it Textual data in Python is handled with str objects, or strings. Strings are immutable sequences of Unicode code points. String literals are written in a variety of ways:} - docs.python.org
+
+		\begin{lstlisting}
+
+string1='Single quotes are nice!'
+
+string2="Double quotes allow 'embedded' single quotes" 
+
+string3='''Triple quote (single or double) allow for
+multiple line strings'''
+
+		\end{lstlisting}
+
+
+
+		\tiny{reference: \href{https://docs.python.org/3/library/stdtypes.html#textseq}{docs.python.org}}
+	
+	\end{frame}
+
+	% Section II - Frame II
+	\begin{frame}[containsverbatim] \small
+		\frametitle{\sectiontitleII}
+		
+
+		\btVFill
+		\tiny{ref: \href{some link}{some text}}
+	\end{frame}	
+
+		% Section II - Frame III
+	\begin{frame}[containsverbatim] \small
+		\frametitle{\sectiontitleII}
+		
+		Redefining Items in a List	
+
+
+		\btVFill
+		\tiny{ref: \href{}{python.org}}
+	\end{frame}	
+
+
+% Section III
+\section{\sectiontitleIII}
+
+	% Section III - Frame I
+	\begin{frame}[label=sectionIII, containsverbatim] \small
+		\frametitle{\sectiontitleIII}
+
+
+		\btVFill
+		\tiny{ref: \href{}{python.org}}
+	\end{frame}
+
+	% Section III - Frame II
+	\begin{frame} \small
+		\frametitle{\sectiontitleIII}
+		
+		
+		\btVFill
+		\tiny{}	
+	\end{frame}
+
+% Section IV
+\section{\sectiontitleIV}	
+	% Section IV - Frame I
+	\begin{frame}[label=sectionIV] \small
+		\frametitle{\sectiontitleV}
+
+
+		\btVFill
+		\tiny{} 
+	\end{frame}
+
+% Section V
+\section{\sectiontitleV}	
+	% Section V - Frame I
+	\begin{frame}[label=sectionV,containsverbatim] \small
+	 	\frametitle{\sectiontitleV}    
+	
+
+	 	\btVFill
+		\tiny{}
+	\end{frame}
+
+\end{document}
