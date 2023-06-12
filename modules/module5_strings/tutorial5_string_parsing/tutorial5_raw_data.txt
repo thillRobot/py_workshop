@@ -1,0 +1,7 @@
+Name, ID, Price, Quantity
+Motor, 103, $357.45, 2
+Wheel, 78, $48.23, 4
+LiDAR, 1089, $2500.00, 1
+Computer, 99, $725.78, 1
+Battery, 401, $501.01, 2
+Battery Controller, 700, $58.99, 1
