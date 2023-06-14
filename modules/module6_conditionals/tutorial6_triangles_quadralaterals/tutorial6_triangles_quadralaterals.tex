@@ -1,0 +1,134 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+
+% GSET Summer 2023 - Tennessee Technological University
+% Tristan Hill - June 12, 2023
+% Turtorial 6 - Conditionals
+
+% matplotib and graphing 
+% trigonometric functions
+% logic and conditional statements 
+
+\documentclass[12pt]{article}
+
+% Custom Preamble
+\usepackage{/mnt/c/Users/thill/Documents/courses/py_workshop/modules/py_tutorials}
+
+% Title and Misc
+\newcommand{\MNUM}{6} %Module Number
+\newcommand{\MNAME}{Conditionals} %Module Name
+\newcommand{\TNAME}{Triangles and Quadralaterals} %Tutorial Name
+\pagestyle{myheadings}
+\markright{{\large GSET - Introduction to Programming with Python}}
+
+\begin{document}
+
+\thispagestyle{plain}
+
+\begin{center}
+   {\bf \large GSET - Introduction to Programming with Python - Summer 2023} \vspace{5mm}\\
+   {\bf \Large \MNAME \hspc -  Tutorial\hspc\MNUM\hspc - \TNAME}\vspace{3mm}\\
+   
+\end{center}
+
+    %\Large
+	\begin{description}
+		
+		\item [\textbf{Overview}]\textbf{:} \\ 
+        
+            Scienctists and engineers benefit from the understanding of Trigonometry. In this exercise you are going to use the trigonometry tools available with NUMPY to solve a simple geometry problem and the graphing tools in MATPLOTLIB to display the results. You will also use conditional statements to determine the type of geometry of different examples.
+       
+        \item[\textbf{\underline{System Requirements:}}] \hfill \vspace{0mm}
+            \begin{itemize}
+                \item {\bf Computer}: A computer is required to complete this tutorial. Any OS should work.
+                \item {\bf Python:} An online Python compiler that supports NumPY and MATPLOTLIB is required( \href{https://www.tutorialspoint.com/execute_matplotlib_online.php}{Tutorials Point MATPLOTLIB Online}  ) or a Python system of your choice with NumPy and MATLPLOT installed.
+            \end{itemize}
+
+        \item [\textbf{Area of a Polygon}]\textbf{:} \\
+        
+            You will be calculating the side length and area of a triangle and a quadrilateral (4 sided polygon). You have been given several formulas on the next page. \\
+        
+        
+\item [\textbf{Trigonometric Functions from NumPy }]\textbf{:}\\\\ The trigonometric functions that you need are included in the \href{https://numpy.org/doc/stable/reference/routines.math.html}{NumPy Mathematics functions} list. To use NumPy, \lstinline{import numpy}.   
+
+    \begin{itemize}             
+        %\begin{multicols}{2}
+        
+        \item \lstinline{numpy.sin(x)} - sine of x
+        \item \lstinline{numpy.cos(x)} - cosine of x
+        \item \lstinline{numpy.tan(x)} - tangent of x
+        
+        \item \lstinline{numpy.asin()} - inverse aka arc-sine  
+        \item \lstinline{numpy.acos()} - inverse aka arc-cosine
+        \item \lstinline{nupy.atan()} - inverse aka arc-tangent
+        
+        %\end{multicols}
+    \end{itemize}    
+
+ \vspace{20mm}
+
+ \newpage
+\item [\textbf{Equations that you will need }]\textbf{:} \\
+    \begin{itemize}             
+        
+        \item {\bf Distance Formula:} \scalebox{1}{$D_{ij}=\sqrt{(x_i-x_j)^2+(y_i-y_j)^2}$} \\
+        
+        \item {\bf Herons Formula(Area):} \scalebox{1}{$A=\sqrt{s(s-a)(s-b)(s-c)}$} \vspace{2mm}\\
+        \item {\bf Perimeter Formula:} \scalebox{1}{$p = a+b+c$ and $s=p/2$} \vspace{2mm}\\
+        \item {\bf Law of Cosines:} \includegraphics[scale=.5]{hw2_fig1.png} \\
+        
+        \scalebox{1}{$a^2 = b^2+c^2-2bc\times\cos(A)$} \vspace{2mm}\\
+        \scalebox{1}{$b^2 = a^2+c^2-2ac\times\cos(B)$} \vspace{2mm}\\
+        \scalebox{1}{$c^2 = a^2+b^2-2ab\times\cos(C)$} \vspace{2mm}\\    
+
+    \end{itemize}
+ \vspace{20mm}
+ 
+\newpage
+\item [\textbf{Assignment}]\textbf{:} You are required to write a Python program to complete the problem described below.
+			\begin{description}
+			\item[Part 1]\textbf{: Triangle}
+			\begin{enumerate}
+				\item Ask the user to enter the 3 vertices of a triangle using the {\it input()} function. The data should be stored using lists.  \\
+		\item Show the vertices and legs of the triangle using MATPLOTLIB.  \\
+                \item Calculate the length of each side of the triangle. Show these results in the command window with {\it fprintf()}. \\
+		\item Calculate each of the internal angles of the triangle. Show these results in the command window  with {\it fprintf()}. \\  
+			\item Calculate the area of the triangle. Show this result in the command window  with {\it fprintf()}. \\  
+			\item Use one or more if statements to determine what type of triangle is formed by the three points. There are six categories shown below. Your program should print category to the command window. \\
+\begin{itemize}
+\item Equilateral
+\item Right
+\item Isosceles
+\item Scalene
+\item Acute 
+\item Obtuse
+\end{itemize}
+			\end{enumerate}
+%			\item[Part 2]\textbf{: Quadrilateral}
+%			\begin{enumerate}
+%				\item Ask the user to enter the 4 vertices of a quadrilateral using the {\it input()} function. The data should be stored into 2 separate arrays, 1 array for x data and 1 array for y data.  \\
+%\item Show the quadrilateral using the plot function. \\
+%                \item Calculate the length of each side of the shape. Also, calculate the length of 1 or both of the {\it diagonals}. Show these results in the command window with {\it fprintf()}. \\
+%		\item Calculate each of the internal angles of the quadrilateral. Show these results in the command window  with {\it fprintf()}.  \\
+%			\item Calculate the area of the quadrilateral. Show this result in the command window  with {\it fprintf()}. \\  
+%	
+%			\end{enumerate}
+	
+			\end{description}
+			
+	\newpage
+\item [\textbf{Submission }]\textbf{:} \\
+			\begin{itemize}
+				\item Your program needs a proper {\it Header} or title block on it (name, date, etc.). Please see this discussion in the notes for details.\\
+				%\item Submit only 1 script for this assignment. It should include part 1, part 2 together.\\
+				\item Your script file needs to be named properly. Please see the {\it naming convention} document on ilearn. \\
+				\item Submit your file on ilearn in the {\it Tutorial\_\MNUM\_\TNAME}. You can resubmit if neede, but your latest submission will be the only one graded.\\
+
+			\end{itemize}
+   	
+    	\end{description}
+ 
+\end{document}
+
+
+
