@@ -20,7 +20,7 @@
 %\newcommand{\topictitle}{---} 
 
 \newcommand{\sectiontitleI}{Logical Statements} % More Titles and Stuff
-\newcommand{\sectiontitleII}{Relational Operators}
+\newcommand{\sectiontitleII}{Comparison Operations}
 \newcommand{\sectiontitleIII}{Branching and Program Flow}
 \newcommand{\sectiontitleIV}{Conditional Statements in Python}
 \newcommand{\sectiontitleV}{Logical Operators and Compound Statements}
@@ -109,23 +109,25 @@ Why are we discussing this? How are logical statements used in programming? \vsp
 	\begin{frame}[label=sectionII,containsverbatim] \small
 	\frametitle{\sectiontitleII}
 	
-	If you studied mathematics, then you are familiar with these operators.  \vspace{5mm}\\
+	If you studied mathematics, then you are familiar with these operators.  \\
 			
 		\renewcommand*{\arraystretch}{1.5}
 		\begin{tabular}{c|c|c} 
 			Name&Symbol&Example\\ \hline
-			greater than&$>$ & \\ \hline
-			less than&$<$ & \\ \hline
-			greater than or equal to&$>=$ & \\ \hline
+			strictly less than&$<$ & \\ \hline
 			less than or equal to&$<=$ & \\ \hline
-			is equals to&$==$ & \\ \hline
-			not equal to&$!=$ & \\ \hline
+			strictly greater than&$>$ & \\ \hline
+			greater than or equal to&$>=$ & \\ \hline
+			equal (is equals to)&$==$ & \\ \hline
+			not equal (is not equal to)&$!=$ & \\ \hline
+			object identity&$is$ & \\ \hline
+			negated object identity&$is\hspace{2mm}not$& \\ \hline
 		\end{tabular}
 		
 	
 	\btVFill
 	
-	\tiny{reference: \href{https://www.cplusplus.com/doc/tutorial/operators/}{cplusplus.com} } 	
+	\tiny{reference: \href{https://docs.python.org/3/library/stdtypes.html}{docs.python.org - Built-in Types} } 	
 	
 	\end{frame}      
 
@@ -199,23 +201,37 @@ Why are we discussing this? How are logical statements used in programming? \vsp
 % Section IV - Frame I
 \begin{frame}[label=sectionIV,containsverbatim] \small
 \frametitle{\sectiontitleIV}    
-
-Conditional Statements in Python - \lstinline{if}
-
+quadratic equation example:
 \begin{lstlisting}
-# coefficients of quadratic equation
+# get string from user
+coefs=input('Type a,b,c and press enter: ')  
+a=float(coefs.split(',')[0])  # split items by commas 
+b=float(coefs.split(',')[1])  # access with index
+c=float(coefs.split(',')[2])  # convert string to float  
 
-coefs=input('Type a,b,c and press enter: ')
-a=coefs.split(',')[0]
-b=coefs.split(',')[1]
-c=coefs.split(',')[2]
+x1=(-b+(b**2-4*a*c)**(0.5))/(2*a)  # calculate root values
+x2=(-b-(b**2-4*a*c)**(0.5))/(2*a)
 
-x1=(-b+(b**2-4*a*c))
-x2=(-b-(b**2-4*a*c))
-
-
+print('The first root is:', x1)
+print('The second root is:', x2)
 \end{lstlisting}
 
+\btVFill
+{\tiny \href{https://docs.python.org/3/tutorial/controlflow.html}{docs.python.org - More Flow Control Tools}}
+
+\end{frame}
+
+% Section IV - Frame II
+\begin{frame}[label=sectionIV,containsverbatim] \small
+\frametitle{\sectiontitleIV}    
+quadratic equation example:
+\begin{lstlisting}
+# determine case from sign of descriminant
+if (b**2-4*a*c)>0:
+	print('The roots are real numbers')
+else:
+	print('The roots are complex numbers')
+\end{lstlisting}
 
 \btVFill
 {\tiny \href{https://docs.python.org/3/tutorial/controlflow.html}{docs.python.org - More Flow Control Tools}}
